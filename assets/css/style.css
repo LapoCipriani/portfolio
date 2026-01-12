@@ -19,3 +19,8 @@ li a {
 ul {
     list-style-type: none;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+}
