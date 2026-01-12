@@ -1,7 +1,11 @@
-div {
+div, li {
     border: 4px solid black;
     font-family: 'Courier New', Courier, monospace;
     margin: 10px;
-    padding: 10px;
+    padding: 5px;
     width: fit-content;
+}
+
+li a {
+    text-decoration: none;
 }
