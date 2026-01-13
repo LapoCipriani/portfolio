@@ -21,13 +21,28 @@ ul {
 }
 
 body {
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    height: 100%;
+    
+}
+
+header {
+    background-color: green;
+}
+
+section {
+    background-color: aquamarine;
 }
 
 footer {
+    background-color: pink;
+    
+}
+
+footer ul, header ul {
     display: flex;
-    align-items: flex-end;
+    flex-direction: row;
 }
