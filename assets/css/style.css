@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -61,4 +61,8 @@ footer a {
     align-items: center;
     padding: 5px;
     gap: 5px;
+}
+
+footer, header {
+    width: 100%;
 }
