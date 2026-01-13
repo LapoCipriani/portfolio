@@ -47,10 +47,11 @@ footer {
 footer ul, header ul {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 footer li img {
-    max-width: 30px;
+    max-width: 20px;
 }
 
 footer a {
