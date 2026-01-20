@@ -33,9 +33,3 @@ footer ul li img {
     height: auto;
 }
 
-footer ul {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: center;
-}
