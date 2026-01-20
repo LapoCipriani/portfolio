@@ -3,3 +3,23 @@
     margin: 0;
     padding: 0;
 }
+/* da rimuovere */
+header {
+    background-color: aqua;
+}
+
+main {
+    background-color: blueviolet;
+}
+
+footer {
+    background-color: peru;
+}
+/* qui inizia */
+ul {
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
