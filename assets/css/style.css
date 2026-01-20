@@ -28,8 +28,22 @@ ul li a {
     text-decoration: none;
 }
 
-footer ul li img {
-    max-width: 44px;
+footer img {
+    width: 40px;
     height: auto;
 }
 
+footer li {
+    display: flex;
+    max-width: 44px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
