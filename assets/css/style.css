@@ -98,3 +98,11 @@ header a {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
 }
+
+/* Piccola correzione centratura verticale img */
+
+footer li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
