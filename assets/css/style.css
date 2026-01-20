@@ -32,3 +32,10 @@ footer ul li img {
     max-width: 44px;
     height: auto;
 }
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
