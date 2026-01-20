@@ -20,6 +20,7 @@ footer ul li {
     background-color: burlywood;
 }
 /* qui inizia */
+/* 1. Far occupare a body tutta l'altezza */
 html, body {
   height: 100%;
 }
@@ -33,7 +34,7 @@ body {
 main {
   flex: 1;
 }
-
+/* 2. Togliere decorazioni e bullet alle liste */
 ul {
     list-style-type: none;
 }
@@ -41,7 +42,7 @@ ul {
 ul li a {
     text-decoration: none;
 }
-
+/* 3. Sistemare il footer */
 footer img {
     width: 40px;
     height: auto;
