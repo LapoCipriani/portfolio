@@ -91,12 +91,12 @@ nav {
 header li {
     border: 4px solid black;
     padding: 10px;
-    max-height: 44px;
+/*    max-height: 44px;*/
 }
 
 header a {
     font-family: 'Courier New', Courier, monospace;
-    font-weight: 700;
+    
 }
 
 /* Piccola correzione centratura verticale img */
@@ -105,4 +105,22 @@ footer li a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Cambio il colore dei link */
+header a:link {
+    color: black;
+    font-weight: 700;
+}
+header a:visited {
+    color: rgb(126, 126, 126);
+    font-weight: 400;
+}
+header a:hover {
+    color: black;
+    font-weight: 700;
+}
+header a:active {
+    color: red;
+    font-weight: 700;
 }
