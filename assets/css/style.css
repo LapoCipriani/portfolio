@@ -66,3 +66,35 @@ footer ul {
 footer {
     padding: 20px;
 }
+
+/* 4. Sistemare l'header */
+/* Qua ho provato a creare la versione desktop dell'header, anche se so
+che per l'esercizio è obbligatorio scrivere mobile-first. Fai conto che
+quello che segue è un esempio del risultato che vorrei ottenere. */
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;   
+    padding: 20px; 
+    background-color: white;
+}
+
+.nav-left ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+header li {
+    border: 4px solid black;
+    padding: 10px;
+    max-height: 44px;
+}
+
+header a {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
