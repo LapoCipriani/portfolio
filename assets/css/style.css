@@ -4,6 +4,7 @@
     padding: 0;
 }
 /* da rimuovere */
+/*
 header {
     background-color: aqua;
 }
@@ -19,6 +20,7 @@ footer {
 footer ul li {
     background-color: burlywood;
 }
+    */
 /* qui inizia */
 /* 1. Far occupare a body tutta l'altezza */
 html, body {
@@ -65,12 +67,16 @@ footer ul {
 
 footer {
     padding: 20px;
+    border-top: 4px solid black;
 }
 
 /* 4. Sistemare l'header */
 /* Qua ho provato a creare la versione desktop dell'header, anche se so
 che per l'esercizio è obbligatorio scrivere mobile-first. Fai conto che
 quello che segue è un esempio del risultato che vorrei ottenere. */
+header {
+    border-bottom: 4px solid black;
+}
 
 nav {
     display: flex;
@@ -124,3 +130,5 @@ header a:active {
     color: red;
     font-weight: 700;
 }
+
+/* Qui finisce la parte comune per tutte le pagine */
