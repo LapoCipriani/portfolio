@@ -150,7 +150,8 @@ FINE BACKUP HEADER */
 }
 
 .mod .header {
-    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    /* box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1); */
+    border-bottom: 4px solid black;
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -166,10 +167,98 @@ FINE BACKUP HEADER */
 .mod .header ul a {
     display: block;
     padding: 20px;
-    border-right: 1px solid red;
     text-decoration: none;
 }
 
+.mod .header ul a:hover {
+    border: 4px solid black;
+}
+
+.mod .header .logo {
+    float: left;
+    font-size: 25px;
+    padding: 10px 20px;
+}
+
+.mod .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.mod .header .menu-icon {
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.mod .header .menu-icon .nav-icon {
+    background-color: gray;
+    display: block;
+    width: 18px;
+    height: 2px;
+    position: relative;
+    transition: background-color .2s ease-out;
+}
+
+.mod .header .menu-icon .nav-icon::before,
+.mod .header .menu-icon .nav-icon::after {
+    background-color: gray;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    transition: all .2s ease-out;
+    position: absolute;
+}
+
+.mod .header .menu-icon .nav-icon::before {
+    top: 5px;
+}
+.mod .header .menu-icon .nav-icon::after {
+    top: -5px;
+}
+
+.mod .header .menu-btn {
+    display: none;
+}
+
+.mod .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+}
+
+.mod .header .menu-btn:checked ~ .menu-icon .nav-icon {
+    background-color: transparent;
+}
+.mod .header .menu-btn:checked ~ .menu-icon .nav-icon::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+.mod .header .menu-btn:checked ~ .menu-icon .nav-icon::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+/* qua inizia parte desktop */
+@media (min-width: 48em) {
+    .mod .header li {
+        float: left;
+    }
+
+    .mod .header li a {
+        padding: 20px 30px;
+    }
+
+    .mod .header .menu {
+        clear: none;
+        float: right;
+        max-height: 0;
+    }
+
+    .mod .header .menu-icon {
+        display: none;
+    }
+}
 
 /* FINE HAMBURGER */
 
