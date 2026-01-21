@@ -144,7 +144,31 @@ header a {
 FINE BACKUP HEADER */
 
 /* INIZIO HEADER HAMBURGER */
+.mod header a {
+    font-family: 'Courier New', Courier, monospace;
+    
+}
 
+.mod .header {
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.mod .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.mod .header ul a {
+    display: block;
+    padding: 20px;
+    border-right: 1px solid red;
+    text-decoration: none;
+}
 
 
 /* FINE HAMBURGER */
