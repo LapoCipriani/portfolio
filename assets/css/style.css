@@ -52,6 +52,10 @@ footer {
     border-top: 4px solid black;
 }
 
+footer p {
+    display: none;
+}
+
 /* INIZIO HEADER HAMBURGER */
 header a {
     font-family: 'Courier New', Courier, monospace;
@@ -178,6 +182,9 @@ header a:active {
     color: red;
     font-weight: 700;
 }
+
+/* Qui finisce la parte comune per tutte le pagine */
+
 /* qua inizia parte desktop */
 
 @media (min-width: 48em) {
@@ -202,4 +209,3 @@ header a:active {
 }
 
 
-/* Qui finisce la parte comune per tutte le pagine */
