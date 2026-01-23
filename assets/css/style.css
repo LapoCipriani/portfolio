@@ -214,7 +214,7 @@ header a:active {
     }
 
     .header .menu li:last-child {
-        border-left: 4px solid black;
+        border-left: 2px solid black;
     }
 
     .header .menu li a {
