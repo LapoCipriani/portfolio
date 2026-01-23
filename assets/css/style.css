@@ -209,20 +209,21 @@ header a:active {
     /* footer */
     footer p {
         display: block;
-        margin-left: 10px;
         color: black;
+        font-size: 0.8rem;
     }
 
     footer li {
-    display: flex;
-    max-width: fit-content;
-    height: auto;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-right: 30px;
+        max-width: fit-content;
     }
+
+    footer li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+    }
+
 
     
 }
