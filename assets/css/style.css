@@ -211,6 +211,9 @@ header a:active {
         float: none;
         display: flex;
         align-items: stretch;
+    }
+
+    .header .menu li:last-child {
         border-left: 4px solid black;
     }
 
