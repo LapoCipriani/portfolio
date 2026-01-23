@@ -81,10 +81,11 @@ header a {
     display: block;
     padding: 20px;
     text-decoration: none;
+    border: 4px solid transparent;
 }
 
 .header ul a:hover {
-    border: 4px solid black;
+    border-color: black;
 }
 
 .header .logo {
@@ -138,7 +139,8 @@ header a {
 }
 
 .header .menu-btn:checked ~ .menu {
-    max-height: 240px;
+    /* max-height: 240px; */
+    max-height: fit-content;
 }
 
 .header .menu-btn:checked ~ .menu-icon .nav-icon {
@@ -207,6 +209,14 @@ header a:active {
 
     .header .menu li {
         float: none;
+        display: flex;
+        align-items: stretch;
+        border-left: 4px solid black;
+    }
+
+    .header .menu li a {
+        display: flex;
+        align-items: center;
     }
 
     .header .menu-icon {
