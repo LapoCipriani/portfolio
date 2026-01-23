@@ -3,26 +3,7 @@
     margin: 0;
     padding: 0;
 }
-/* da rimuovere */
-/*
-header {
-    background-color: aqua;
-}
 
-main {
-    background-color: blueviolet;
-}
-
-footer {
-    background-color: peru;
-}
-
-footer ul li {
-    background-color: burlywood;
-}
-    */
-    /* Inserisco il commento per vedere se Git va */
-/* qui inizia */
 /* 1. Far occupare a body tutta l'altezza */
 html, body {
   height: 100%;
@@ -71,91 +52,13 @@ footer {
     border-top: 4px solid black;
 }
 
-/* 4. Sistemare l'header */
-/* Qua ho provato a creare la versione desktop dell'header, anche se so
-che per l'esercizio è obbligatorio scrivere mobile-first. Fai conto che
-quello che segue è un esempio del risultato che vorrei ottenere. */
-/* .original header {
-    border-bottom: 4px solid black;
-}
-
-.original nav {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;   
-    padding: 20px; 
-    background-color: white;
-}
-
-.original .nav-left ul {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-
-.original header li {
-    border: 4px solid black;
-    padding: 10px;
-}
-
-.original header a {
-    font-family: 'Courier New', Courier, monospace;
-    
-} */
-/* BACKUP HEADER */
-/* 4. Sistemare l'header */
-/* Qua ho provato a creare la versione desktop dell'header, anche se so
-che per l'esercizio è obbligatorio scrivere mobile-first. Fai conto che
-quello che segue è un esempio del risultato che vorrei ottenere. */
-/*
-header {
-    border-bottom: 4px solid black;
-}
-
-nav {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;   
-    padding: 20px; 
-    background-color: white;
-}
-
-.nav-left ul {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-
-header li {
-    border: 4px solid black;
-    padding: 10px;
-
-}
-
+/* INIZIO HEADER HAMBURGER */
 header a {
     font-family: 'Courier New', Courier, monospace;
     
 }
-FINE BACKUP HEADER */
 
-/* INIZIO HEADER HAMBURGER */
-.mod header a {
-    font-family: 'Courier New', Courier, monospace;
-    
-}
-
-/* .mod .header {
-    border-bottom: 4px solid black;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-} */
-
-.mod .header {
+.header {
     position: sticky;
     top: 0;
     z-index: 10;
@@ -163,51 +66,43 @@ FINE BACKUP HEADER */
     border-bottom: 4px solid black;
 }
 
-/* .mod .header::after {
-    content: "";
-    display: block;
-    border-bottom: 4px solid black;
-} */
-
-
-
-.mod .header ul {
+.header ul {
     margin: 0;
     padding: 0;
     list-style: none;
     overflow: hidden;
 }
 
-.mod .header ul a {
+.header ul a {
     display: block;
     padding: 20px;
     text-decoration: none;
 }
 
-.mod .header ul a:hover {
+.header ul a:hover {
     border: 4px solid black;
 }
 
-.mod .header .logo {
+.header .logo {
     float: left;
     font-size: 25px;
     padding: 10px 20px;
 }
 
-.mod .header .menu {
+.header .menu {
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
 }
 
-.mod .header .menu-icon {
+.header .menu-icon {
     padding: 28px 20px;
     position: relative;
     float: right;
     cursor: pointer;
 }
 
-.mod .header .menu-icon .nav-icon {
+.header .menu-icon .nav-icon {
     background-color: gray;
     display: block;
     width: 18px;
@@ -216,8 +111,8 @@ FINE BACKUP HEADER */
     transition: background-color .2s ease-out;
 }
 
-.mod .header .menu-icon .nav-icon::before,
-.mod .header .menu-icon .nav-icon::after {
+.header .menu-icon .nav-icon::before,
+.header .menu-icon .nav-icon::after {
     background-color: gray;
     content: "";
     display: block;
@@ -227,29 +122,29 @@ FINE BACKUP HEADER */
     position: absolute;
 }
 
-.mod .header .menu-icon .nav-icon::before {
+.header .menu-icon .nav-icon::before {
     top: 5px;
 }
-.mod .header .menu-icon .nav-icon::after {
+.header .menu-icon .nav-icon::after {
     top: -5px;
 }
 
-.mod .header .menu-btn {
+.header .menu-btn {
     display: none;
 }
 
-.mod .header .menu-btn:checked ~ .menu {
+.header .menu-btn:checked ~ .menu {
     max-height: 240px;
 }
 
-.mod .header .menu-btn:checked ~ .menu-icon .nav-icon {
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
     background-color: transparent;
 }
-.mod .header .menu-btn:checked ~ .menu-icon .nav-icon::before {
+.header .menu-btn:checked ~ .menu-icon .nav-icon::before {
     transform: rotate(-45deg);
     top: 0;
 }
-.mod .header .menu-btn:checked ~ .menu-icon .nav-icon::after {
+.header .menu-btn:checked ~ .menu-icon .nav-icon::after {
     transform: rotate(45deg);
     top: 0;
 }
@@ -284,43 +179,24 @@ header a:active {
     font-weight: 700;
 }
 /* qua inizia parte desktop */
-/* @media (min-width: 48em) {
-    .mod .header li {
-        float: left;
-    }
-
-    .mod .header li a {
-        padding: 20px 30px;
-    }
-
-    .mod .header .menu {
-        clear: none;
-        float: right;
-        max-height: none;
-    }
-
-    .mod .header .menu-icon {
-        display: none;
-    }
-} */
 
 @media (min-width: 48em) {
-    .mod .header {
+    .header {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
-    .mod .header .menu {
+    .header .menu {
         display: flex;
         max-height: none;
     }
 
-    .mod .header .menu li {
+    .header .menu li {
         float: none;
     }
 
-    .mod .header .menu-icon {
+    .header .menu-icon {
         display: none;
     }
 }
