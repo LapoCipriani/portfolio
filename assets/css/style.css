@@ -148,13 +148,28 @@ FINE BACKUP HEADER */
     
 }
 
-.mod .header {
-    /* box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1); */
+/* .mod .header {
     border-bottom: 4px solid black;
     position: fixed;
     width: 100%;
     z-index: 1;
+} */
+
+.mod .header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    border-bottom: 4px solid black;
 }
+
+/* .mod .header::after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid black;
+} */
+
+
 
 .mod .header ul {
     margin: 0;
@@ -269,7 +284,7 @@ header a:active {
     font-weight: 700;
 }
 /* qua inizia parte desktop */
-@media (min-width: 48em) {
+/* @media (min-width: 48em) {
     .mod .header li {
         float: left;
     }
@@ -287,6 +302,28 @@ header a:active {
     .mod .header .menu-icon {
         display: none;
     }
+} */
+
+@media (min-width: 48em) {
+    .mod .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .mod .header .menu {
+        display: flex;
+        max-height: none;
+    }
+
+    .mod .header .menu li {
+        float: none;
+    }
+
+    .mod .header .menu-icon {
+        display: none;
+    }
 }
+
 
 /* Qui finisce la parte comune per tutte le pagine */
