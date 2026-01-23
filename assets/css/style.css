@@ -206,6 +206,25 @@ header a:active {
     .header .menu-icon {
         display: none;
     }
+    /* footer */
+    footer p {
+        display: block;
+        margin-left: 10px;
+        color: black;
+    }
+
+    footer li {
+    display: flex;
+    max-width: fit-content;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 30px;
+    }
+
+    
 }
 
 
