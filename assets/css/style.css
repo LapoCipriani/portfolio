@@ -156,6 +156,12 @@ header a {
 
 /* FINE HAMBURGER */
 
+/* qui switch ita/eng */
+
+.header .menu .lang-switch {
+    display: flex;
+    align-items: center;
+}
 
 /* Piccola correzione centratura verticale img */
 
@@ -222,6 +228,10 @@ header a:active {
         flex-direction: column;
         align-items: center;
         gap: 6px;
+    }
+
+    .header .menu .lang-switch {
+        border-left: 4px solid black;
     }
 
 
