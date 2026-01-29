@@ -193,7 +193,29 @@ header a:active {
 }
 
 /* Qui finisce la parte comune per tutte le pagine */
+.galleria {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    /* gap: 40px; */
+}
 
+.galleria div {
+    border: 2px solid red;
+    width: 180px;
+    height: 180px;
+    margin: 40px;
+}
+
+/* .galleria div:first-child {
+    margin-top: 40px;
+}
+
+.galleria div:last-child {
+    margin-bottom: 40px;
+} */
 /* qua inizia parte desktop */
 
 @media (min-width: 48em) {
@@ -243,7 +265,14 @@ header a:active {
         align-items: center;
         gap: 6px;
     }
-
+    /* galleria */
+    .galleria {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
 }
+
+
 
 
