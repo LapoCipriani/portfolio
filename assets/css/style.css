@@ -199,7 +199,6 @@ header a:active {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    /* gap: 40px; */
 }
 
 .galleria div {
@@ -208,15 +207,6 @@ header a:active {
     height: 180px;
     margin: 40px;
 }
-
-/* .galleria div:first-child {
-    margin-top: 40px;
-}
-
-.galleria div:last-child {
-    margin-bottom: 40px;
-} */
-/* qua inizia parte desktop */
 
 @media (min-width: 48em) {
     .header {
