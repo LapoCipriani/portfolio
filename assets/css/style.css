@@ -209,6 +209,7 @@ header a:active {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     gap: 10px;
 }
 
@@ -219,6 +220,7 @@ header a:active {
 
 .gallery-item .caption {
     flex-wrap: wrap;
+    text-align: center;
 }
 
 @media (min-width: 48em) {
