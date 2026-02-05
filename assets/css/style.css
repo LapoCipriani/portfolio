@@ -175,19 +175,20 @@ footer li a {
 }
 
 /* Cambio il colore dei link */
-header a:link {
+
+a:link {
     color: black;
     font-weight: 700;
 }
-header a:visited {
+a:visited {
     color: rgb(126, 126, 126);
     font-weight: 400;
 }
-header a:hover {
+a:hover {
     color: black;
     font-weight: 700;
 }
-header a:active {
+a:active {
     color: red;
     font-weight: 700;
 }
