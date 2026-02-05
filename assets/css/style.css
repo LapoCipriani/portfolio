@@ -193,6 +193,9 @@ a:active {
     font-weight: 700;
 }
 
+p {
+    color: black;
+}
 /* Qui finisce la parte comune per tutte le pagine */
 /* GALLERIA */
 
@@ -225,6 +228,14 @@ a:active {
     gap: 1rem;
 }
 
+.project-images a {
+    display: none;
+}
+
+.project-images a:first-child {
+    display: inline;
+}
+
 .project-images img {
     display: none;
 }
@@ -233,6 +244,8 @@ a:active {
     display: block;
     max-width: 300px;
 }
+
+
     
 @media (min-width: 48em) {
     .header {
@@ -295,6 +308,10 @@ a:active {
         justify-content: space-between;
     }
 
+    .project-images a {
+        display: inline;
+    }
+
     .project-images img {
         max-width: 200px;
         display: block;
@@ -303,4 +320,5 @@ a:active {
     .project-images img:first-child {
         max-width: 200px;
     }
+
 }
