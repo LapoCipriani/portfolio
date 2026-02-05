@@ -299,16 +299,20 @@ p {
     }
 
     .project-images {
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1rem;
     }
 
     .project-images a {
         display: flex;
-        flex-wrap: wrap;
     }
 
-    .project-images img:first-child {
+    .project-images img {
         max-width: 200px;
+        width: 100%;
+        height: auto;
     }
+
 
 }
