@@ -233,15 +233,10 @@ p {
 }
 
 .project-images a:first-child {
-    display: inline;
-}
-
-.project-images img {
-    display: none;
+    display: flex;
 }
 
 .project-images img:first-child {
-    display: block;
     max-width: 300px;
 }
 
@@ -296,7 +291,7 @@ p {
     }
     /* galleria */
     
-     .galleria {
+    .galleria {
         align-items: flex-start;
     }
 
@@ -309,12 +304,8 @@ p {
     }
 
     .project-images a {
-        display: inline;
-    }
-
-    .project-images img {
-        max-width: 200px;
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .project-images img:first-child {
