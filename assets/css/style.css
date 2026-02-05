@@ -193,39 +193,46 @@ header a:active {
 }
 
 /* Qui finisce la parte comune per tutte le pagine */
+/* GALLERIA */
+
 .galleria {
     display: flex;
-    flex-direction: column; 
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
-.galleria div {
-    border: 2px solid red;
-    width: 300px;
-    height: 300px;
-    margin: 40px;
+.project {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-}
-
-.gallery-item img {
-    width: 100%;
     height: auto;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    gap: 2rem;
+    align-items: center;
 }
 
-.gallery-item .caption {
-    flex-wrap: wrap;
-    text-align: center;
-    font-size: 0.85rem;
-    opacity: 0.7;
-    margin-top: 0.4rem;
+.project-images {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
+.project-images img {
+    display: none;
+}
+
+.project-images img:first-child {
+    display: block;
+    max-width: 300px;
+}
+    
 @media (min-width: 48em) {
     .header {
         display: flex;
@@ -274,9 +281,25 @@ header a:active {
         gap: 6px;
     }
     /* galleria */
-    .galleria {
-        flex-direction: row;
+    
+     .galleria {
         align-items: flex-start;
-        justify-content: space-around;
+    }
+
+    .project {
+        align-items: flex-start;
+    }
+
+    .project-images {
+        justify-content: space-between;
+    }
+
+    .project-images img {
+        max-width: 200px;
+        display: block;
+    }
+
+    .project-images img:first-child {
+        max-width: 200px;
     }
 }
