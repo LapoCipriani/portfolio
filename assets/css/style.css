@@ -242,13 +242,6 @@ p {
     height: auto;
 }
 
-.project-link {
-  display: block;
-  color: inherit;
-  text-decoration: none;
-}
-
-
     
 @media (min-width: 48em) {
     .header {
