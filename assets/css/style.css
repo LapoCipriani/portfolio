@@ -241,7 +241,10 @@ p {
     width: 100%;
     height: auto;
 }
-
+/* MAIN */
+main {
+    padding: 20px;
+}
     
 @media (min-width: 48em) {
     .header {
