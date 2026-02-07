@@ -245,6 +245,10 @@ p {
 main {
     padding: 20px;
 }
+
+main h1, main p {
+    text-align: center;
+}
     
 @media (min-width: 48em) {
     .header {
@@ -318,5 +322,8 @@ main {
         height: auto;
     }
 
+    main h1, main p {
+    text-align: left;
+}
 
 }
