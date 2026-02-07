@@ -241,6 +241,16 @@ p {
     width: 100%;
     height: auto;
 }
+
+.project-images a:hover img {
+    transform: scale(1.02);
+}
+
+.project-images img {
+    transition: transform 0.3s ease;
+}
+
+
 /* MAIN */
 main {
     padding: 20px;
@@ -322,6 +332,8 @@ main h1, main p {
         width: 100%;
         height: auto;
     }
+
+    
 
     /* main */
 
