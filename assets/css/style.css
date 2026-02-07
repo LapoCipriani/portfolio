@@ -314,6 +314,7 @@ main h1, main p {
 
     .project-images a {
         display: flex;
+        max-width: fit-content;
     }
 
     .project-images img {
@@ -323,7 +324,7 @@ main h1, main p {
     }
 
     /* main */
-    
+
     main h1, main p {
     text-align: left;
 }
