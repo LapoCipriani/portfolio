@@ -295,7 +295,7 @@ main {
 .job1, .job2, .study1, .study2, .volu {
   background: #1a1a1a;
   border-radius: 10px;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 .year-label {
   display: block;
@@ -304,6 +304,15 @@ main {
   font-weight: bold;
   color: black;
 }
+
+.cv-grid article a {
+  display: block;
+  width: 100%;
+  height: 100%; /* tutta la colonna/segmento */
+  text-decoration: none;
+  background: rgba(255,255,255,0.1); /* opzionale: per vedere il clic */
+}
+
 /* qui esperienze */
 
 .laser2 {
