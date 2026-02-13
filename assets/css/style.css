@@ -319,7 +319,7 @@ article.job-exp, article.study-exp, article.vol-exp {
   scroll-margin-top: 70px; /* altezza della header o spazio che vuoi sopra il titolo */
 }
 
-.experience-block article ul {
+.cv-content article ul {
     list-style-type: circle;
 }
 
