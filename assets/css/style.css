@@ -406,8 +406,12 @@ article.job-exp, article.study-exp, article.vol-exp, #top {
     grid-row: 169 / 180;    
 }
 /* experience */
+.cv-content h2 {
+    padding: 20px;
+}
 .job-exp, .study-exp, .vol-exp {
     padding: 20px;
+    padding-left: 30px;
 }
 
 .job-exp { border-left: 3px solid black; }
