@@ -365,7 +365,7 @@ article.job-exp, article.study-exp, article.vol-exp {
     grid-row: 140 / 165;
 }
 /* qui studi */
-.start, .dams {
+.start, .dams, .si-po {
     grid-column: 4;
 }
 .haccp, .circo, .aggio, .euro {
@@ -383,6 +383,9 @@ article.job-exp, article.study-exp, article.vol-exp {
     grid-row: 11 / 18;
 }
 
+.si-po {
+    grid-row: 23 / 59;
+}
 .haccp {
     grid-row: 56 / 57;
 }
