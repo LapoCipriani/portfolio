@@ -266,7 +266,7 @@ main h1 {
 
 
 .grid-container {
-    gap: 4rem;
+    gap: 150px;
     padding: 2rem;
     display: flex;
     flex-direction: column;
