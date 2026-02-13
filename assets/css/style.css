@@ -322,6 +322,9 @@ article.job-exp, article.study-exp {
   scroll-margin-top: 70px; /* altezza della header o spazio che vuoi sopra il titolo */
 }
 
+.experience article ul {
+    list-style-type: circle;
+}
 /* qui esperienze */
 
 .laser2 {
