@@ -312,7 +312,9 @@ main {
   background: rgba(255,255,255,0.1); /* opzionale: per vedere il clic */
 }
 .cv-grid article:hover {
-  background: red;
+  background: #fff;
+  border: 4px solid black;
+  border-radius: 0%;
   cursor: pointer;
 }
 
