@@ -256,7 +256,7 @@ main {
     padding: 20px;
 }
 
-main h1, main p {
+main h1 {
     text-align: center;
 }
 
@@ -264,9 +264,6 @@ main h1, main p {
 
 /* prova grid */
 
-main {
-    padding: 2rem;
-}
 
 .grid-container {
     gap: 4rem;
@@ -482,7 +479,7 @@ article.job-exp, article.study-exp {
 
     /* main */
 
-    main h1, main p {
+    main h1 {
         text-align: left;
     }
     /* grid cv */
