@@ -388,7 +388,10 @@ main {
 .euro {
     grid-row: 169 / 180;    
 }
-
+/* experience */
+.job-exp {
+    padding: 20px;
+}
 @media (min-width: 48em) {
     .header {
         display: flex;
