@@ -322,6 +322,7 @@ article.job-exp, article.study-exp, article.vol-exp {
 .experience-block article ul {
     list-style-type: circle;
 }
+
 /* qui esperienze */
 
 .laser2 {
@@ -406,17 +407,10 @@ article.job-exp, article.study-exp, article.vol-exp {
     padding: 20px;
 }
 
-.job-exp {
-    border-left: 3px solid #ff9800;
-}
+.job-exp { border-left: 3px solid #ff9800; }
+.study-exp { border-left: 3px solid #4fc3f7; }
+.vol-exp { border-left: 3px solid #8bc34a; }
 
-.study-exp {
-    border-left: 3px solid #4fc3f7;
-}
-
-.vol-exp {
-    border-left: 3px solid #e53935;
-}
 article:target {
     border-left: 4px solid #ff9800;
     background: rgba(255, 152, 0, 0.08);
