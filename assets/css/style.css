@@ -295,7 +295,6 @@ main {
 .job1, .job2, .study1, .study2, .volu {
   background: #1a1a1a;
   border-radius: 10px;
-  /* padding: 1rem; */
 }
 .year-label {
   display: block;
