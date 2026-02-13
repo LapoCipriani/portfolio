@@ -315,11 +315,11 @@ main h1 {
   cursor: pointer;
 }
 
-article.job-exp, article.study-exp {
+article.job-exp, article.study-exp, article.vol-exp {
   scroll-margin-top: 70px; /* altezza della header o spazio che vuoi sopra il titolo */
 }
 
-.experience article ul {
+.experience-block article ul {
     list-style-type: circle;
 }
 /* qui esperienze */
@@ -370,7 +370,10 @@ article.job-exp, article.study-exp {
 .haccp, .circo, .aggio, .euro {
     grid-column: 5;
 }
-
+.borsi {
+    grid-column: 6;
+    grid-row: 56 / 59;
+}
 .cri {
     grid-column: 6;
     grid-row: 80 / 83;
