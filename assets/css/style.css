@@ -273,7 +273,8 @@ main h1 {
 }
 .cv-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  
   grid-auto-rows: 0.7rem;
   gap: 0 2rem;
   position: relative;
@@ -307,6 +308,7 @@ main h1 {
   height: 100%; /* tutta la colonna/segmento */
   text-decoration: none;
   background: rgba(255,255,255,0.1); /* opzionale: per vedere il clic */
+  
 }
 .cv-grid article:hover {
   background: red;
