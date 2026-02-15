@@ -456,7 +456,10 @@ article:target {
   transform: scale(1.1);
   opacity: 1;
 }
-
+/* text appearance */
+.meta {
+    margin-bottom: 0.5rem;
+}
 @media (min-width: 48em) {
     .header {
         display: flex;
