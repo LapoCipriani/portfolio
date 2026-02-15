@@ -377,6 +377,36 @@ article:target {
 .meta {
     margin-bottom: 0.5rem;
 }
+
+/* contact us */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 5%;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+.cta-button {
+    padding: 12px 24px;
+    background: #1E4C2C;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #718F22;
+    transition: background-color 0.3s ease;
+}
+
 @media (min-width: 48em) {
     .header {
         display: flex;
@@ -510,5 +540,12 @@ article:target {
     .cv-grid article:hover {
     background: red;
     cursor: pointer;
+    }
+
+    /* form */
+    form {
+        align-items: flex-start;
+        margin-left: 20px;
+        padding: 0;
     }
 }
