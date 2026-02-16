@@ -26,22 +26,25 @@
             form.addEventListener("submit", function(event) {
                 event.preventDefault();
 
-                emailjs.sendForm('service_ddyb763', 'template_t1bk26v', form)
-                .then(function(response) {
-                    console.log("SUCCESS", response);
-                    alert("Messaggio inviato!");
+                
+                emailjs.sendForm('service_ddyb763', 'template_3kda739', form)
+                .then(function() {
+                    return emailjs.sendForm('service_ddyb763', 'template_t1bk26v', form);
+                })
+                .then(function() {
+                    alert("Messaggio inviato correttamente!");
                     form.reset();
                 })
                 .catch(function(error) {
-                    console.error("ERRORE:", error);
-                    alert("Errore invio");
+                    console.error("Errore:", error);
                 });
+
 
             });
 
         });
 
-        </script>
+    </script>
 
 </head>
 <body>
