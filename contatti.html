@@ -9,6 +9,29 @@
     <link rel="icon" type="image/png" sizes="192x192" href="assets/img/icons/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="assets/img/icons/android-chrome-512x512.png">
     <title>Contatti - Lapo Cipriani</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "y_62dGMxfLQYdrz7t",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('service_ddyb763', 'template_t1bk26v', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 <body>
     <header class="header">
@@ -41,11 +64,13 @@
                         
                         <label for="email">E-mail:</label>
                         <input type="email" id="email" name="email" required>
+                        <label for="subject">Oggetto:</label>
+                        <input type="text" id="subject" name="subject" required>
                         
                         <label for="message">Messaggio:</label>
                         <textarea id="message" name="message" required></textarea>
                         
-                        <button type="submit" class="cta-button">Contattami</button>
+                        <button type="submit" class="cta-button" value="Send">Contattami</button>
                     </form>
                 </div>
         </section>
