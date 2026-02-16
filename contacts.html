@@ -18,20 +18,30 @@
             });
         })();
     </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+
+            const form = document.getElementById("contact-form");
+
+            form.addEventListener("submit", function(event) {
                 event.preventDefault();
-                // these IDs from the previous steps
-                emailjs.sendForm('service_ddyb763', 'template_t1bk26v', this)
-                    .then(() => {
-                        console.log('SUCCESS!');
-                    }, (error) => {
-                        console.log('FAILED...', error);
-                    });
+
+                emailjs.sendForm('service_ddyb763', 'template_t1bk26v', form)
+                .then(function(response) {
+                    console.log("SUCCESS", response);
+                    alert("Messaggio inviato!");
+                    form.reset();
+                })
+                .catch(function(error) {
+                    console.error("ERRORE:", error);
+                    alert("Errore invio");
+                });
+
             });
-        }
-    </script>
+
+        });
+
+        </script>
 </head>
 <body>
     <header class="header">

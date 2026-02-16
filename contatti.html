@@ -21,24 +21,26 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
 
-            const form = document.querySelector("form");
+            const form = document.getElementById("contact-form");
 
             form.addEventListener("submit", function(event) {
                 event.preventDefault();
 
                 emailjs.sendForm('service_ddyb763', 'template_t1bk26v', form)
-                .then(function() {
+                .then(function(response) {
+                    console.log("SUCCESS", response);
                     alert("Messaggio inviato!");
                     form.reset();
                 })
                 .catch(function(error) {
-                    console.error("Errore:", error);
+                    console.error("ERRORE:", error);
                     alert("Errore invio");
                 });
 
             });
 
         });
+
         </script>
 
 </head>
