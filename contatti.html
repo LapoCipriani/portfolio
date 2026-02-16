@@ -20,17 +20,24 @@
     </script>
     <script type="text/javascript">
         window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // these IDs from the previous steps
-                emailjs.sendForm('service_ddyb763', 'template_t1bk26v', this)
+            document.addEventListener("DOMContentLoaded", function() {
+                const form = document.querySelector("form");
+
+                form.addEventListener("submit", function(event) {
+                    event.preventDefault();
+
+                    emailjs.sendForm('service_ddyb763', 'template_t1bk26v', form)
                     .then(() => {
-                        console.log('SUCCESS!');
-                    }, (error) => {
-                        console.log('FAILED...', error);
+                        alert("Messaggio inviato!");
+                        form.reset();
+                    })
+                    .catch((error) => {
+                        console.error(error);
+                        alert("Errore invio");
                     });
-            });
-        }
+                });
+                });
+
     </script>
 </head>
 <body>
