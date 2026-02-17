@@ -305,7 +305,7 @@ article.job-exp, article.study-exp, article.vol-exp, #top {
     grid-row: 93 / 109;
 }
 
-.web-dev {
+.web {
     grid-column: 3;
     grid-row: 11 / 19;
 }
