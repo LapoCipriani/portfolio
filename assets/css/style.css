@@ -567,9 +567,7 @@ form {
     }
 
     /* form */
-    form {
-        align-items: flex-start;
-        margin-left: 20px;
+    form {        
         padding: 0;
     }
     /* contacts */
