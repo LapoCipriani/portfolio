@@ -410,6 +410,26 @@ form {
     font-weight: 700;
     transition: background-color 0.3s ease;
 }
+/* contacts */
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+.contacts img {
+    width: 95px;
+}
+
+.contacts section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 20px; */
+    margin: 50px;
+}
+.contacts section h2 {
+    margin-bottom: 20px;
+}
 
 @media (min-width: 48em) {
     .header {
@@ -551,5 +571,14 @@ form {
         align-items: flex-start;
         margin-left: 20px;
         padding: 0;
+    }
+    /* contacts */
+    .contacts {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .contacts section {
+        justify-content: flex-start;
     }
 }

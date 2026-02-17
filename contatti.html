@@ -69,7 +69,28 @@
     </header>
     
     <main>
-        <section>
+        <h1>Contattami</h1>
+        <div class="contacts">
+            <section class="form">
+                <h2>Inviami una e-mail</h2>
+                
+                    <form id="contact-form">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="subject">Oggetto:</label>
+                        <input type="text" id="subject" name="subject" required>
+                        
+                        <label for="message">Messaggio:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        
+                        <button type="submit" class="cta-button" value="Send">Contattami</button>
+                    </form>
+                    
+            </section>
+        <!-- <section>
             <h1>Contattami</h1>
                 <div class="form">
                     <form id="contact-form">
@@ -87,7 +108,22 @@
                         <button type="submit" class="cta-button" value="Send">Contattami</button>
                     </form>
                 </div>
-        </section>
+        </section> -->
+            <section class="linkedin">
+                <h2>Trovami su LinkedIn</h2>
+                <a href="https://www.linkedin.com/in/lapo-cipriani-81836b190/" target="_blank" rel="noopener noreferrer" aria-label="Visita il mio profilo LinkedIn" title="Visita il mio profilo LinkedIn">
+                    <img src="assets/img/linkedin.svg" alt="Logo LinkedIn">
+                    
+                </a> 
+            </section>
+            <section class="github">
+                <h2>Trovami su GitHub</h2>
+                <a href="https://github.com/LapoCipriani" target="_blank" rel="noopener noreferrer" aria-label="Visita il mio profilo GitHub" title="Visita il mio profilo GitHub">
+                    <img src="assets/img/github-mark.svg" alt="Logo GitHub">
+                    
+                </a>
+            </section>
+        </div>
     </main>
 
     <footer>
