@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,33 +12,33 @@
     <title>Contacts - Lapo Cipriani</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function() {
+        (function () {
             // https://dashboard.emailjs.com/admin/account
             emailjs.init({
-              publicKey: "y_62dGMxfLQYdrz7t",
+                publicKey: "y_62dGMxfLQYdrz7t",
             });
         })();
     </script>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
 
             const form = document.getElementById("contact-form");
 
-            form.addEventListener("submit", function(event) {
+            form.addEventListener("submit", function (event) {
                 event.preventDefault();
 
-                
+
                 emailjs.sendForm('service_ddyb763', 'template_3kda739', form)
-                .then(function() {
-                    return emailjs.sendForm('service_ddyb763', 'template_t1bk26v', form);
-                })
-                .then(function() {
-                    alert("Messaggio inviato correttamente!");
-                    form.reset();
-                })
-                .catch(function(error) {
-                    console.error("Errore:", error);
-                });
+                    .then(function () {
+                        return emailjs.sendForm('service_ddyb763', 'template_t1bk26v', form);
+                    })
+                    .then(function () {
+                        alert("Messaggio inviato correttamente!");
+                        form.reset();
+                    })
+                    .catch(function (error) {
+                        console.error("Errore:", error);
+                    });
 
 
             });
@@ -46,6 +47,7 @@
 
     </script>
 </head>
+
 <body>
     <header class="header">
         <a href="index2.html" title="Go to Homepage" class="logo">Home</a>
@@ -65,45 +67,47 @@
                 </nav>
             </li>
         </ul>
-        
+
 
     </header>
-    
+
     <main>
         <h1>Contact me</h1>
         <div class="contacts">
             <section class="form">
                 <h2>Send me an e-mail</h2>
-                
-                    <form id="contact-form">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                        
-                        <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" required>
-                        <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="subject" required>
-                        
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" required></textarea>
-                        
-                        <button type="submit" class="cta-button" value="Send">Contact me</button>
-                    </form>
-                    
+
+                <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit" class="cta-button" value="Send">Contact me</button>
+                </form>
+
             </section>
-        
+
             <section class="linkedin">
                 <h2>Find me on LinkedIn</h2>
-                <a href="https://www.linkedin.com/in/lapo-cipriani-81836b190/" target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile" title="Visit my LinkedIn profile">
+                <a href="https://www.linkedin.com/in/lapo-cipriani-81836b190/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Visit my LinkedIn profile" title="Visit my LinkedIn profile">
                     <img src="assets/img/linkedin.svg" alt="LinkedIn logo">
-                    
-                </a> 
+
+                </a>
             </section>
             <section class="github">
                 <h2>Find me on GitHub</h2>
-                <a href="https://github.com/LapoCipriani" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile" title="Visit my GitHub profile">
+                <a href="https://github.com/LapoCipriani" target="_blank" rel="noopener noreferrer"
+                    aria-label="Visit my GitHub profile" title="Visit my GitHub profile">
                     <img src="assets/img/github-mark.svg" alt="GitHub logo">
-                    
+
                 </a>
             </section>
         </div>
@@ -111,15 +115,17 @@
 
     <footer>
         <ul>
-            
+
             <li>
-                <a href="https://www.linkedin.com/in/lapo-cipriani-81836b190/" target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile" title="Visit my LinkedIn profile">
+                <a href="https://www.linkedin.com/in/lapo-cipriani-81836b190/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Visit my LinkedIn profile" title="Visit my LinkedIn profile">
                     <img src="assets/img/linkedin.svg" alt="LinkedIn logo">
                     <p lang="en">LinkedIn</p>
                 </a>
             </li>
             <li>
-                <a href="https://github.com/LapoCipriani" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile" title="Visit my GitHub profile">
+                <a href="https://github.com/LapoCipriani" target="_blank" rel="noopener noreferrer"
+                    aria-label="Visit my GitHub profile" title="Visit my GitHub profile">
                     <img src="assets/img/github-mark.svg" alt="GitHub logo">
                     <p lang="en">GitHub</p>
                 </a>
@@ -127,4 +133,5 @@
         </ul>
     </footer>
 </body>
+
 </html>
