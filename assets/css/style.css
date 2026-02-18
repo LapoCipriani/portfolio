@@ -463,6 +463,9 @@ form {
     align-items: center;
     gap: 20px;
 }
+.bio-text, .skills {
+    padding: 20px;
+}
 @media (min-width: 48em) {
     .header {
         display: flex;
