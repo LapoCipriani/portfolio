@@ -256,7 +256,7 @@ main {
     padding: 20px;
 }
 
-main h1 {
+h1, h2 {
     text-align: center;
     margin-bottom: 20px;
 }
@@ -463,10 +463,7 @@ form {
     align-items: center;
     gap: 20px;
 }
-.biography h2 {
-    padding-bottom: 20px;
-    text-align: center;
-}
+
 .bio-text, .skills {
     padding: 20px;
 }
@@ -547,7 +544,7 @@ form {
 
     /* main */
 
-    main h1 {
+    h1, h2 {
         text-align: left;
     }
     /* grid cv */
@@ -618,4 +615,16 @@ form {
     .contacts section {
         justify-content: flex-start;
     }
+    /* home */
+    .biography {
+        align-items: flex-start;
+    }
+    
+    .bio {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 50px;
+    }
+    
+    
 }
