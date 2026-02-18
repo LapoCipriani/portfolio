@@ -472,6 +472,32 @@ form {
 .bio-text, .skills {
     padding: 20px;
 }
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.skills-group h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+}
+
+.skills-group ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.skills-group li {
+    margin-bottom: 8px;
+}
+
 @media (min-width: 48em) {
     .header {
         display: flex;
@@ -635,8 +661,4 @@ form {
         gap: 50px;
         max-width: 90vw;
     }
-    .skills {
-        max-width: 60vw;
-    }
-    
 }
