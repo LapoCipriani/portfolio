@@ -448,9 +448,12 @@ form {
     gap: 20px;
 }
 .bio-pic {
-    width: 250px;
-    height: 250px;
+    /* width: clamp(200px, 40%, 320px); */
+    width: clamp(200px, 35vw, 320px);
+    aspect-ratio: 1;
+    object-fit: cover;
 }
+
 .bio-pic, .bio-text, .skills {
     border: 4px solid black;
 }
@@ -626,7 +629,10 @@ form {
         display: grid;
         grid-template-columns: 1fr 2fr;
         gap: 50px;
+        max-width: 90vw;
     }
-    
+    .skills {
+        max-width: 60vw;
+    }
     
 }
