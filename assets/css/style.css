@@ -617,9 +617,11 @@ form {
     }
     /* home */
     .biography {
-        align-items: flex-start;
+        align-items: center;
     }
-    
+    .biography h1 {
+        align-self: flex-start;
+    }
     .bio {
         display: grid;
         grid-template-columns: 1fr 2fr;
