@@ -463,6 +463,10 @@ form {
     align-items: center;
     gap: 20px;
 }
+.biography h2 {
+    padding-bottom: 20px;
+    text-align: center;
+}
 .bio-text, .skills {
     padding: 20px;
 }
