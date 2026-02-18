@@ -410,6 +410,16 @@ form {
     font-weight: 700;
     transition: background-color 0.3s ease;
 }
+
+.cta-button a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.cta-button a:hover {
+    color: black;
+}
 /* contacts */
 .contacts {
     display: flex;
