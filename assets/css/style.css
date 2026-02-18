@@ -377,6 +377,10 @@ article:target {
 .meta {
     margin-bottom: 0.5rem;
 }
+.info {
+    max-width: 48em;
+    justify-self: center;
+}
 
 /* contact us */
 
@@ -545,9 +549,10 @@ form {
 
     /* main */
 
-    h1, h2 {
+    h2 {
         text-align: left;
     }
+    
     /* grid cv */
     .grid-container {
         display: grid;
@@ -620,9 +625,9 @@ form {
     .biography {
         align-items: center;
     }
-    .biography h1 {
+    /* .biography h1 {
         align-self: flex-start;
-    }
+    } */
     .bio {
         display: grid;
         align-items: center;
