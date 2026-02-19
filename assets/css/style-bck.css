@@ -1,3 +1,6 @@
+/* =========================
+   RESET
+========================= */
 *,
 *::before,
 *::after {
@@ -6,10 +9,11 @@
     padding: 0;
 }
 
-/* 1. Far occupare a body tutta l'altezza */
+/* =========================
+   BASE LAYOUT
+========================= */
 html,
 body {
-    /* height: 100%; */
     height: 100vh;
 }
 
@@ -21,9 +25,9 @@ body {
 
 main {
     flex: 1;
+    padding: 20px;
 }
 
-/* 2. Togliere decorazioni e bullet alle liste */
 ul {
     list-style-type: none;
 }
@@ -32,40 +36,44 @@ ul li a {
     text-decoration: none;
 }
 
-/* 3. Sistemare il footer */
-footer img {
-    width: 40px;
-    height: auto;
+p {
+    color: black;
 }
 
-footer li {
-    display: flex;
-    max-width: 44px;
-    height: auto;
-    justify-content: center;
-    align-items: center;
+h1,
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-footer ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+/* =========================
+   LINKS
+========================= */
+a:link {
+    color: black;
+    font-weight: 700;
 }
 
-footer {
-    padding: 20px;
-    border-top: 4px solid black;
+a:visited {
+    color: rgb(126, 126, 126);
+    font-weight: 400;
 }
 
-footer p {
-    display: none;
+a:hover {
+    color: black;
+    font-weight: 700;
 }
 
-/* INIZIO HEADER HAMBURGER */
+a:active {
+    color: red;
+    font-weight: 700;
+}
+
+/* =========================
+   HEADER
+========================= */
 header a {
     font-family: 'Courier New', Courier, monospace;
-
 }
 
 .header {
@@ -146,7 +154,6 @@ header a {
 }
 
 .header .menu-btn:checked~.menu {
-    /* max-height: 240px; */
     max-height: fit-content;
 }
 
@@ -164,17 +171,33 @@ header a {
     top: 0;
 }
 
-
-/* FINE HAMBURGER */
-
-/* qui switch ita/eng */
-
 .header .menu .lang-switch {
     display: flex;
     align-items: center;
 }
 
-/* Piccola correzione centratura verticale img */
+/* =========================
+   FOOTER
+========================= */
+footer {
+    padding: 20px;
+    border-top: 4px solid black;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer li {
+    display: flex;
+    max-width: 44px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
 
 footer li a {
     display: flex;
@@ -182,35 +205,18 @@ footer li a {
     align-items: center;
 }
 
-/* Cambio il colore dei link */
-
-a:link {
-    color: black;
-    font-weight: 700;
+footer img {
+    width: 40px;
+    height: auto;
 }
 
-a:visited {
-    color: rgb(126, 126, 126);
-    font-weight: 400;
+footer p {
+    display: none;
 }
 
-a:hover {
-    color: black;
-    font-weight: 700;
-}
-
-a:active {
-    color: red;
-    font-weight: 700;
-}
-
-p {
-    color: black;
-}
-
-/* Qui finisce la parte comune per tutte le pagine */
-/* GALLERIA */
-
+/* =========================
+   GALLERY
+========================= */
 .galleria {
     display: flex;
     flex-direction: column;
@@ -252,30 +258,16 @@ p {
     max-width: 300px;
     width: 100%;
     height: auto;
+    transition: transform 0.3s ease;
 }
 
 .project-images a:hover img {
     transform: scale(1.02);
 }
 
-.project-images img {
-    transition: transform 0.3s ease;
-}
-
-
-/* MAIN */
-main {
-    padding: 20px;
-}
-
-h1,
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* cv */
-
+/* =========================
+   CV
+========================= */
 .grid-container {
     gap: 150px;
     padding: 2rem;
@@ -283,20 +275,57 @@ h2 {
     flex-direction: column;
 }
 
-article.job-exp,
-article.study-exp,
-article.vol-exp,
-#top {
-    scroll-margin-top: 70px;
-    /* altezza della header o spazio che vuoi sopra il titolo */
+.cv-grid {
+    display: none;
+}
+
+.cv-content h2 {
+    padding: 20px;
 }
 
 .cv-content article ul {
     list-style-type: circle;
 }
 
-.cv-grid {
-    display: none;
+.info {
+    max-width: 48em;
+    justify-self: center;
+}
+
+article.job-exp,
+article.study-exp,
+article.vol-exp,
+#top {
+    scroll-margin-top: 70px;
+}
+
+.job-exp,
+.study-exp,
+.vol-exp {
+    padding: 20px;
+    padding-left: 30px;
+}
+
+.job-exp {
+    border-left: 3px solid black;
+}
+
+.study-exp {
+    border-left: 3px dotted black;
+}
+
+.vol-exp {
+    border-left: 3px dashed black;
+}
+
+article:target {
+    border-left: 4px solid red;
+    background: rgba(255, 0, 0, 0.08);
+    transition: background 0.4s ease;
+}
+
+.meta {
+    margin-bottom: 0.5rem;
 }
 
 /* qui esperienze */
@@ -360,37 +389,9 @@ article.vol-exp,
     grid-row: 102 / 109;
 }
 
-/* experience */
-.cv-content h2 {
-    padding: 20px;
-}
-
-.job-exp,
-.study-exp,
-.vol-exp {
-    padding: 20px;
-    padding-left: 30px;
-}
-
-.job-exp {
-    border-left: 3px solid black;
-}
-
-.study-exp {
-    border-left: 3px dotted black;
-}
-
-.vol-exp {
-    border-left: 3px dashed black;
-}
-
-article:target {
-    border-left: 4px solid red;
-    background: rgba(255, 0, 0, 0.08);
-    transition: background 0.4s ease;
-}
-
-/* pulsante back to top */
+/* =========================
+   BACK TO TOP
+========================= */
 .back-to-top {
     position: fixed;
     bottom: 2rem;
@@ -411,27 +412,6 @@ article:target {
     transform: scale(1.1);
     opacity: 1;
 }
-
-/* text appearance */
-.meta {
-    margin-bottom: 0.5rem;
-}
-
-.info {
-    max-width: 48em;
-    justify-self: center;
-}
-
-/* contact us */
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    padding: 5%;
-}
-
 
 /* =========================
    BUTTONS
@@ -458,14 +438,15 @@ form {
 .cta-button a {
     text-decoration: none;
     color: white;
-
 }
 
 .cta-button a:hover {
     color: black;
 }
 
-/* contacts */
+/* =========================
+   CONTACTS
+========================= */
 .contacts {
     display: flex;
     flex-direction: column;
@@ -480,7 +461,6 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* gap: 20px; */
     margin: 50px;
 }
 
@@ -488,12 +468,25 @@ form {
     margin-bottom: 20px;
 }
 
-/* home */
+/* =========================
+   HOME
+========================= */
 .biography {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
+}
+
+.biography a {
+    color: white;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .bio-pic {
@@ -508,17 +501,6 @@ form {
     border: 4px solid black;
 }
 
-.bio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.biography a {
-    color: white;
-}
-
 .bio-text,
 .skills {
     padding: 20px;
@@ -530,7 +512,6 @@ form {
     gap: 30px;
     max-width: 90vw;
     margin: 0 auto;
-    padding: 20px;
 }
 
 .skills-group h3 {
@@ -549,8 +530,22 @@ form {
     margin-bottom: 8px;
 }
 
+/* =========================
+   FORM
+========================= */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 5%;
+}
 
+/* =========================
+   DESKTOP
+========================= */
 @media (min-width: 48em) {
+
     .header {
         display: flex;
         align-items: center;
@@ -581,7 +576,6 @@ form {
         display: none;
     }
 
-    /* footer */
     footer p {
         display: block;
         font-size: 0.8rem;
@@ -597,8 +591,6 @@ form {
         align-items: center;
         gap: 6px;
     }
-
-    /* galleria */
 
     .galleria {
         align-items: flex-start;
@@ -625,30 +617,19 @@ form {
         height: auto;
     }
 
-
-
-    /* main */
-
     h2 {
         text-align: left;
     }
 
-    /* grid cv */
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 2fr;
     }
 
-    /* timeline */
-
-
-
     .cv-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-
         grid-auto-rows: 0.7rem;
-
         gap: 0 2rem;
         position: relative;
     }
@@ -676,7 +657,6 @@ form {
         display: block;
         position: relative;
         top: calc(11 * 0.7rem);
-        /* 11 righe verso il basso, se 1 riga = 5px */
         font-weight: bold;
         color: black;
     }
@@ -685,11 +665,8 @@ form {
         display: block;
         width: 100%;
         height: 100%;
-        /* tutta la colonna/segmento */
         text-decoration: none;
         background: rgba(255, 255, 255, 0.1);
-        /* opzionale: per vedere il clic */
-
     }
 
     .cv-grid article:hover {
@@ -697,12 +674,10 @@ form {
         cursor: pointer;
     }
 
-    /* form */
     form {
         padding: 0;
     }
 
-    /* contacts */
     .contacts {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -712,16 +687,15 @@ form {
         justify-content: flex-start;
     }
 
-    /* home */
-    .biography {
-        align-items: center;
-    }
-
     .bio {
         display: grid;
         align-items: center;
         grid-template-columns: 1fr 2fr;
         gap: 50px;
         max-width: 90vw;
+    }
+
+    .biography {
+        align-items: center;
     }
 }
