@@ -21,6 +21,9 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    color: black;
 }
 
 main {
@@ -34,10 +37,6 @@ ul {
 
 ul li a {
     text-decoration: none;
-}
-
-p {
-    color: black;
 }
 
 h1,
