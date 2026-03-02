@@ -6,11 +6,6 @@
   padding: 0;
 }
 
-body {
-  background-color: white;
-  color: black;
-}
-
 /* =========================
    BASE LAYOUT
 ========================= */
@@ -29,6 +24,7 @@ body {
   flex-direction: column;
   font-family: Helvetica, sans-serif;
   font-size: 1.125rem;
+  background-color: white;
   color: black;
 }
 
