@@ -17,12 +17,14 @@ body {
     height: 100vh;
 }
 
+html { font-size: 100%; }
+
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: black;
 }
 
@@ -544,7 +546,7 @@ form {
 /* =========================
    DESKTOP
 ========================= */
-@media (min-width: 48em) {
+@media (min-width: 42rem) {
 
     .header {
         display: flex;
