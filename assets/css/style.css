@@ -54,7 +54,7 @@ a:link {
 }
 
 a:visited {
-    color: rgb(126, 126, 126);
+    color: gray;
     font-weight: 400;
 }
 
