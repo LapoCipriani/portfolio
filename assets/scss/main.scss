@@ -213,22 +213,20 @@ footer p {
    GALLERY
 ========================= */
 .galleria {
-    @include flex-column-align();
+    @include mixins.flex-column-align();
     gap: 30px;
     padding: 30px;
     justify-content: flex-start;
 }
 
 .project {
-    display: flex;
-    flex-direction: column;
+    @include mixins.flex-column-align();
     height: auto;
     width: 100%;
     justify-content: space-between;
     padding-top: 1rem;
     padding-bottom: 1rem;
     gap: 2rem;
-    align-items: center;
 }
 
 .project-images {
@@ -451,9 +449,7 @@ article:target {
 }
 
 .contacts section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include mixins.flex-column-align();
     justify-content: center;
     margin: 50px;
 }
@@ -466,9 +462,7 @@ article:target {
    HOME
 ========================= */
 .biography {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include mixins.flex-column-align();
     gap: 50px;
 }
 
@@ -477,9 +471,7 @@ article:target {
 }
 
 .bio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include mixins.flex-column-align();
     gap: 20px;
 }
 
@@ -528,10 +520,8 @@ article:target {
    FORM
 ========================= */
 form {
-    display: flex;
-    flex-direction: column;
+    @include mixins.flex-column-align();
     gap: 10px;
-    align-items: center;
     padding: 5%;
 }
 
@@ -580,9 +570,7 @@ form {
     }
 
     footer li a {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include mixins.flex-column-align();
         gap: 6px;
     }
 
