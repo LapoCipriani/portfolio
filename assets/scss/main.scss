@@ -1,6 +1,6 @@
 @use "resets";
 @use "colors";
-
+@use "mixins";
 
 /* =========================
    BASE LAYOUT
@@ -19,7 +19,6 @@ body {
     font-family: Helvetica, sans-serif;
     font-size: 1.125rem;
     background-color: colors.$primary-color;
-    // color: colors.$inverse-primary;
     color: colors.$inverse-primary;
 }
 
@@ -214,11 +213,9 @@ footer p {
    GALLERY
 ========================= */
 .galleria {
-    display: flex;
-    flex-direction: column;
+    @include flex-column-align();
     gap: 30px;
     padding: 30px;
-    align-items: center;
     justify-content: flex-start;
 }
 
