@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="icon" href="assets/img/icons/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icons/apple-touch-icon.png">
@@ -42,10 +43,13 @@
 
     </header>
 
-    <main class="biography">
+    <main class="biography container-fluid">
         <h1>About Me</h1>
         <section class="bio">
-            <img src="assets/img/foto-bio.jpg" alt="Lapo's portrait" class="bio-pic">
+            <div class="bio-pic">
+                <img src="assets/img/foto-bio.jpg" alt="Lapo's portrait" class="img-fluid">
+            </div>
+            
             <div class="bio-text">
                 <h2>Background</h2>
                 <p>My relationship with computers started very early. I was two years old when my father let me play
@@ -65,29 +69,36 @@
                     skills I’ve developed.</p>
             </div>
         </section>
-        <section class="skills">
+        <section class="skills mt-5">
             <h2>Technical Skills</h2>
-            <div class="skills-group">
-                <h3>Core Skills</h3>
-                <ul>
-                    <li>HTML5 and CSS3, responsive websites</li>
-                    <li>Version control with Git and GitHub</li>
-                    <li>Basic accessibility principles (WCAG)</li>
-                    <li>Semantic markup and SEO optimization</li>
-                </ul>
-            </div>
-            <div class="skills-group">
-                <h3>Additional Technical Skills</h3>
-                <ul>
-                    <li>Operating system installation and configuration (Windows, Linux, Ubuntu Studio)</li>
-                    <li>Virtual machines usage</li>
-                    <li>Software and development environment setup</li>
-                    <li>Basic database knowledge</li>
-                </ul>
+            <div class="row skills-group">
+                <div class="col-md-6">
+                    <h3>Core Skills</h3>
+                    <ul>
+                        <li>HTML5 and CSS3, responsive websites</li>
+                        <li>Version control with Git and GitHub</li>
+                        <li>Basic accessibility principles (WCAG)</li>
+                        <li>Semantic markup and SEO optimization</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Additional Technical Skills</h3>
+                    <ul>
+                        <li>Operating system installation and configuration (Windows, Linux, Ubuntu Studio)</li>
+                        <li>Virtual machines usage</li>
+                        <li>Software and development environment setup</li>
+                        <li>Basic database knowledge</li>
+                    </ul>
+                </div>
+                
             </div>
         </section>
 
-        <a href="contacts.html" class="cta-button" title="Contact me">Contact me</a>
+        <div class="text-center mt-4">
+            <a href="contacts.html" class="cta-button btn" title="Contact me">Contact me</a>
+        </div>
+
+        
     </main>
 
     <footer>
