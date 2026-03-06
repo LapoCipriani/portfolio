@@ -434,15 +434,27 @@ article.vol-exp,
     .bio {
         @include mixins.flex-column-align();
         gap: 20px;
+        max-width: 90vw;
+        margin: 0 auto;
         .bio-pic {
             width: clamp(200px, 35vw, 320px);
             aspect-ratio: 1;
             object-fit: cover;
+            img {
+                width: 100%;
+                max-width: 320px; // come avevi prima
+                aspect-ratio: 1;
+                object-fit: cover;
+                border: 4px solid colors.$inverse-primary; // bordo applicato direttamente all'immagine
+                }
         }
+    }
+    h1, h2, h3 {
+        font-weight: 700; // rende i titoli bold
+        color: colors.$inverse-primary; // mantiene colore originale
     }
 }
 
-.bio-pic,
 .bio-text,
 .skills {
     border: 4px solid colors.$inverse-primary;
@@ -626,6 +638,12 @@ form {
             grid-template-columns: 1fr 2fr;
             gap: 50px;
             max-width: 90vw;
+            margin: 0 auto;
+            .bio-pic {
+                display: flex;
+                justify-content: center;         // centra l'immagine nella colonna
+                align-items: center;
+            }
         }
     }
 }

@@ -446,6 +446,8 @@ article.vol-exp,
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  max-width: 90vw;
+  margin: 0 auto;
 }
 .biography .bio .bio-pic {
   width: clamp(200px, 35vw, 320px);
@@ -453,8 +455,19 @@ article.vol-exp,
   -o-object-fit: cover;
      object-fit: cover;
 }
+.biography .bio .bio-pic img {
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 4px solid #000000;
+}
+.biography h1, .biography h2, .biography h3 {
+  font-weight: 700;
+  color: #000000;
+}
 
-.bio-pic,
 .bio-text,
 .skills {
   border: 4px solid #000000;
@@ -628,5 +641,11 @@ form {
     grid-template-columns: 1fr 2fr;
     gap: 50px;
     max-width: 90vw;
+    margin: 0 auto;
+  }
+  .biography .bio .bio-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }/*# sourceMappingURL=main.css.map */

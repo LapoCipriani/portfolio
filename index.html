@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="icon" href="assets/img/icons/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icons/apple-touch-icon.png">
@@ -41,54 +42,62 @@
 
     </header>
 
-    <main class="biography">
+    <main class="biography container-fluid">
         <h1>Chi sono</h1>
         <section class="bio">
-            <img src="assets/img/foto-bio.jpg" alt="Ritratto di Lapo" class="bio-pic">
+            <div class="bio-pic">
+                <img src="assets/img/foto-bio.jpg" alt="Ritratto di Lapo" class="img-fluid">
+            </div>
             <div class="bio-text">
                 <h2>La mia storia</h2>
-                <p>Il mio rapporto con il computer è iniziato molto presto. Avevo due anni quando mio padre mi faceva
+                <p>
+                    Il mio rapporto con il computer è iniziato molto presto. Avevo due anni quando mio padre mi faceva
                     giocare a Centurion, ed è lì che è nata una curiosità naturale per il digitale. In seconda elementare
                     ho creato il mio primo ipertesto: una raccolta di schede sugli animali del giardino della scuola,
-                    con una pagina dedicata a ciascuno.<br><br>Crescendo ho imparato a usare Excel, Word e Paint,
-                    esplorando il web e sperimentando strumenti creativi. Durante l’adolescenza il computer è diventato
-                    soprattutto uno spazio per la musica: ho usato Guitar Pro, Audacity e Cubasis, e con Foobar ho
+                    con una pagina dedicata a ciascuno.<br><br>
+                    Crescendo ho imparato a usare Excel, Word e Paint, esplorando il web e sperimentando strumenti creativi.
+                    Durante l’adolescenza il computer è diventato soprattutto uno spazio per la musica: ho usato Guitar Pro, Audacity e Cubasis, e con Foobar ho
                     scritto piccoli script per automatizzare l’ordinamento della mia collezione musicale e
-                    personalizzare l’interfaccia secondo le mie esigenze.<br><br>In seguito ho installato Ubuntu Studio
-                    in dual boot e ho iniziato a lavorare con JACK per la gestione audio. Parallelamente, aiutavo
-                    conoscenti e amici a risolvere problemi sui loro computer.<br><br>All’università ho valutato
-                    l’iscrizione a Informatica, ma ho scelto il DAMS, dove mi sono laureato con una tesi sull’usabilità
-                    e la SEO dei siti web per sale prova musicali, unendo così la mia passione per l’arte e quella per
-                    il digitale. Durante il percorso universitario ho sostenuto anche un esame di HTML, consolidando un
-                    interesse che non mi ha mai abbandonato.<br><br>Oggi ho deciso di seguire il corso Full-Stack Web
-                    Developer di Start2Impact e ho iniziato a realizzare i miei primi progetti web, costruendo un
-                    portfolio che racconta il mio percorso e le competenze acquisite.</p>
+                    personalizzare l’interfaccia secondo le mie esigenze.<br><br>
+                    In seguito ho installato Ubuntu Studio in dual boot e ho iniziato a lavorare con JACK per la gestione audio.
+                    Parallelamente, aiutavo conoscenti e amici a risolvere problemi sui loro computer.<br><br>
+                    All’università ho valutato l’iscrizione a Informatica, ma ho scelto il DAMS, dove mi sono laureato con
+                    una tesi sull’usabilità e la SEO dei siti web per sale prove musicali, unendo così la mia passione per
+                    l’arte e quella per il digitale. Durante il percorso universitario ho sostenuto anche un esame di HTML,
+                    consolidando un interesse che non mi ha mai abbandonato.<br><br>
+                    Oggi ho deciso di seguire il corso Full-Stack Web Developer di Start2Impact e ho iniziato a realizzare i miei primi progetti web,
+                    costruendo un portfolio che racconta il mio percorso e le competenze acquisite.
+                </p>
             </div>
         </section>
 
-        <section class="skills">
+        <section class="skills mt-5">
             <h2>Le mie competenze</h2>
-            <div class="skills-group">
-                <h3>Competenze principali</h3>
-                <ul>
-                    <li>HTML5 e CSS3, siti responsive</li>
-                    <li>Versionamento con Git e GitHub</li>
-                    <li>Basi di accessibilità (WCAG)</li>
-                    <li>Strutturazione semantica e ottimizzazione SEO</li>
-                </ul>
-            </div>
-            <div class="skills-group">
-                <h3>Altre competenze tecniche</h3>
-                <ul>
-                    <li>Installazione e configurazione di sistemi operativi (Windows, Linux, Ubuntu Studio)</li>
-                    <li>Utilizzo di macchine virtuali</li>
-                    <li>Installazione e gestione di software e ambienti di sviluppo</li>
-                    <li>Basi di database</li>
-                </ul>
+            <div class="row skills-group">
+                <div class="col-md-6">
+                    <h3>Competenze principali</h3>
+                    <ul>
+                        <li>HTML5 e CSS3, siti responsive</li>
+                        <li>Versionamento con Git e GitHub</li>
+                        <li>Basi di accessibilità (WCAG)</li>
+                        <li>Strutturazione semantica e ottimizzazione SEO</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Altre competenze tecniche</h3>
+                    <ul>
+                        <li>Installazione e configurazione di sistemi operativi (Windows, Linux, Ubuntu Studio)</li>
+                        <li>Utilizzo di macchine virtuali</li>
+                        <li>Installazione e gestione di software e ambienti di sviluppo</li>
+                        <li>Basi di database</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
-        <a href="contatti.html" class="cta-button" title="Contattami">Contattami</a>
+        <div class="text-center mt-4">
+            <a href="contatti.html" class="cta-button btn">Contattami</a>
+        </div>
     </main>
     <footer>
         <ul>
