@@ -245,9 +245,16 @@ footer {
     h2 {
         padding: 20px;
     }
-    article ul {
-        list-style-type: circle;
-    }
+    article {
+        &:target {
+            border-left: 4px solid colors.$accent-color;
+            background: colors.$accent-color-variant;
+            transition: background 0.4s ease;
+        }
+        ul {
+            list-style-type: circle;
+        }
+    } 
 }
 
 .info {
@@ -279,12 +286,6 @@ article.vol-exp,
 
 .vol-exp {
     border-left: 3px dashed colors.$inverse-primary;
-}
-
-article:target {
-    border-left: 4px solid colors.$accent-color;
-    background: colors.$accent-color-variant;
-    transition: background 0.4s ease;
 }
 
 .meta {
@@ -432,17 +433,15 @@ article:target {
     a {
         color: colors.$primary-color;
     }
-}
-
-.bio {
-    @include mixins.flex-column-align();
-    gap: 20px;
-}
-
-.bio-pic {
-    width: clamp(200px, 35vw, 320px);
-    aspect-ratio: 1;
-    object-fit: cover;
+    .bio {
+        @include mixins.flex-column-align();
+        gap: 20px;
+        .bio-pic {
+            width: clamp(200px, 35vw, 320px);
+            aspect-ratio: 1;
+            object-fit: cover;
+        }
+    }
 }
 
 .bio-pic,
@@ -462,22 +461,23 @@ article:target {
     gap: 30px;
     max-width: 90vw;
     margin: 0 auto;
+    .skills-group {
+        h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            border-bottom: 2px solid colors.$inverse-primary;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+    }
 }
-.skills-group {
-    h3 {
-        margin-bottom: 10px;
-        font-size: 1.2rem;
-        border-bottom: 2px solid colors.$inverse-primary;
-        padding-bottom: 5px;
-    }
-    ul {
-        list-style-type: disc;
-        padding-left: 20px;
-    }
-    li {
-        margin-bottom: 8px;
-    }
-}
+
 
 /* =========================
    FORM
@@ -611,27 +611,25 @@ form {
         color: colors.$inverse-primary;
     }
 
-    form {
-        padding: 0;
-    }
-
     .contacts {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         section {
             justify-content: flex-start;
         }
-    }
-    
-    .bio {
-        display: grid;
-        align-items: center;
-        grid-template-columns: 1fr 2fr;
-        gap: 50px;
-        max-width: 90vw;
+        form {
+            padding: 0;
+        }
     }
 
     .biography {
         align-items: center;
+        .bio {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1fr 2fr;
+            gap: 50px;
+            max-width: 90vw;
+        }
     }
 }
