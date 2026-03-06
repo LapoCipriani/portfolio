@@ -201,8 +201,7 @@ footer p {
   padding: 30px;
   justify-content: flex-start;
 }
-
-.project {
+.galleria .project {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -213,24 +212,23 @@ footer p {
   padding-bottom: 1rem;
   gap: 2rem;
 }
-
-.project-images {
+.galleria .project .project-images {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
-.project-images a {
+.galleria .project .project-images a {
   display: none;
 }
-.project-images a:first-child {
+.galleria .project .project-images a:first-child {
   display: flex;
 }
-.project-images a:hover img {
+.galleria .project .project-images a:hover img {
   transform: scale(1.02);
 }
-.project-images img {
+.galleria .project .project-images img {
   max-width: 300px;
   width: 100%;
   height: auto;
@@ -544,20 +542,20 @@ form {
   .galleria {
     align-items: flex-start;
   }
-  .project {
+  .galleria .project {
     align-items: flex-start;
   }
-  .project-images {
+  .galleria .project .project-images {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 1rem;
   }
-  .project-images a {
+  .galleria .project .project-images a {
     display: flex;
     max-width: -moz-fit-content;
     max-width: fit-content;
   }
-  .project-images img {
+  .galleria .project .project-images img {
     max-width: 200px;
     width: 100%;
     height: auto;
