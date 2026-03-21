@@ -12,11 +12,19 @@ $rossino: color.change($red, $alpha: 0.08);
 $w-trasp: color.change($white, $alpha: 0.1);
 
 // List
-$primary-color: $white;
-$inverse-primary: $black;
+$primary-color: $black;
+$inverse-primary: $white;
 $secondary-color: $gray;
 $accent-color: $red;
 
-$primary-color-variant: $w-trasp;
-$secondary-color-variant: $d-gray;
+$primary-color-variant: $d-gray;
+$secondary-color-variant: $w-trasp;
 $accent-color-variant: $rossino;
+// $primary-color: $white;
+// $inverse-primary: $black;
+// $secondary-color: $gray;
+// $accent-color: $red;
+
+// $primary-color-variant: $w-trasp;
+// $secondary-color-variant: $d-gray;
+// $accent-color-variant: $rossino;
