@@ -487,16 +487,16 @@ article.vol-exp,
             object-fit: cover;
             img {
                 width: 100%;
-                max-width: 320px; // come avevi prima
+                max-width: 320px; 
                 aspect-ratio: 1;
                 object-fit: cover;
-                border: 4px solid colors.$inverse-primary; // bordo applicato direttamente all'immagine
+                border: 4px solid colors.$inverse-primary;
                 }
         }
     }
     h1, h2, h3 {
-        font-weight: 700; // rende i titoli bold
-        color: colors.$inverse-primary; // mantiene colore originale
+        font-weight: 700;
+        color: colors.$inverse-primary;
     }
 }
 
@@ -622,7 +622,6 @@ form {
     .study1,
     .study2,
     .volu {
-        // background: colors.$secondary-color-variant;
         background: colors.$primary-color;
         border-radius: 10px;
     }
@@ -649,7 +648,7 @@ form {
             margin: 0 auto;
             .bio-pic {
                 display: flex;
-                justify-content: center;         // centra l'immagine nella colonna
+                justify-content: center;
                 align-items: center;
             }
         }
